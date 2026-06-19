@@ -8,7 +8,7 @@ A full-stack SaaS starter with a branded marketing site, authentication, and a c
 
 <br />
 
-![Landing page](docs/screenshots/landing.png)
+![Landing page](docs/screenshots/landing.png?v=2)
 
 <p>
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white" />
@@ -60,21 +60,21 @@ Nexus is a polished, end-to-end SaaS boilerplate designed around a cohesive **el
 
 | Pricing | Authentication |
 |---------|----------------|
-| ![Pricing](docs/screenshots/pricing.png) | ![Login](docs/screenshots/login.png) |
+| ![Pricing](docs/screenshots/pricing.png?v=2) | ![Login](docs/screenshots/login.png?v=2) |
 
 | Dashboard — Overview | Usage |
 |----------------------|-------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Usage](docs/screenshots/usage.png) |
+| ![Dashboard](docs/screenshots/dashboard.png?v=2) | ![Usage](docs/screenshots/usage.png?v=2) |
 
 | Billing | API Keys |
 |---------|----------|
-| ![Billing](docs/screenshots/billing.png) | ![API Keys](docs/screenshots/apikeys.png) |
+| ![Billing](docs/screenshots/billing.png?v=2) | ![API Keys](docs/screenshots/apikeys.png?v=2) |
 
 <details>
 <summary>More screenshots</summary>
 
 ### Settings
-![Settings](docs/screenshots/settings.png)
+![Settings](docs/screenshots/settings.png?v=2)
 
 </details>
 
