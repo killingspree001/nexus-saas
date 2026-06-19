@@ -1,9 +1,17 @@
 import { PrismaClient } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
 
 const prismaClientSingleton = () => {
-  // If DATABASE_URL is missing, we provide a placeholder to prevent build errors
-  // but this will still fail at runtime if the DB is actually needed.
-  return new PrismaClient();
+  // Prisma 7 connects through a driver adapter. If DATABASE_URL is missing
+  // (e.g. during a build with no env configured), we fall back to a placeholder
+  // so the client can be constructed without throwing. Actual queries will only
+  // succeed when a real DATABASE_URL is provided at runtime.
+  const adapter = new PrismaPg({
+    connectionString:
+      process.env.DATABASE_URL ||
+      "postgresql://placeholder:placeholder@localhost:5432/placeholder",
+  });
+  return new PrismaClient({ adapter });
 };
 
 declare global {
